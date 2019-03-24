@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="colorAccent">#009688</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="tab_checked">#a9eaea</color>
+    <color name="tab_unchecked">#394e4e</color>
+    <color name="tabUnselectedIconColor">#589393</color>
+    <color name="devider">#ebebeb</color>
+    <color name="text">#223038</color>
+    <color name="medium_text">#7e7e7e</color>
+    <color name="red">#d6171a</color>
+    <color name="green">#23a418</color>
+</resources>

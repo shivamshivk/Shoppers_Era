@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Shoppers Era</string>
+    <string name="title_activity_main__handler_">Rass Fashion</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="whatsapp_support">Whatsapp Support</string>
+    <string name="title_activity_login__actvity">Login_Actvity</string>
+    <string name="view_win"><![CDATA[View & Win]]></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="select_download"><![CDATA[Download]]></string>
+    <string name="select_share"><![CDATA[Share]]></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="admob_app_id">ca-app-pub-5069247112741222~1995819555</string>
+    <string name="ad_unit_id">ca-app-pub-5069247112741222/7966331532</string>
+    <string name="ad_video_id">ca-app-pub-8846572999899891/2735485617</string>
+</resources>

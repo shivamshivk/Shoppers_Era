@@ -1,0 +1,496 @@
+<android.support.v4.widget.SwipeRefreshLayout android:id="@+id/simpleSwipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/catalogue_scroll_view"
+            android:fillViewport="true"
+            android:visibility="gone">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/catlogue_details"
+                android:visibility="visible"
+                android:background="@color/white"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context="com.fashio.apps.Fragments.Fragment_View"
+                android:descendantFocusability="blocksDescendants">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/p_bar_2"
+                android:visibility="visible"
+                android:layout_marginTop="100dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/catlogue_layout"
+                android:descendantFocusability="blocksDescendants">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Newly Added"
+                android:background="#f33"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:id="@+id/newly_added_2"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Newly Added"
+                android:background="#f33"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:layout_below="@+id/newly_added_2"
+                android:id="@+id/newly_added_3"
+                android:layout_alignParentRight="true"
+                tools:ignore="RtlHardcoded" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lin_layout_1"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:id="@+id/catlogue_name"
+                android:textColor="@color/text"
+                android:text="New Arrivals"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="13 Designs"
+                android:textSize="12sp"
+                android:id="@+id/catlogue_no"
+                tools:targetApi="jelly_bean" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/catlogue_desc"
+                android:text="ABC scrolling blah blah blah blah"
+                android:layout_marginTop="10dp"
+                />
+
+            </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/catlogue_rec_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:focusable="false"
+                    android:layout_below="@+id/lin_layout_1"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"/>
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:fillViewport="true"
+            android:id="@+id/scroll_view">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/cat_details"
+                android:visibility="visible"
+                android:background="@color/white"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context="com.fashio.apps.Fragments.Fragment_View"
+                android:descendantFocusability="blocksDescendants">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/p_bar_1"
+                        android:visibility="visible"
+                        android:layout_marginTop="100dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/cat_layout"
+                        android:descendantFocusability="blocksDescendants">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Newly Added"
+                            android:background="#f33"
+                            android:padding="4dp"
+                            android:textSize="12sp"
+                            android:id="@+id/newly_added"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Newly Added"
+                            android:background="#f33"
+                            android:padding="4dp"
+                            android:textSize="12sp"
+                            android:layout_below="@+id/newly_added"
+                            android:id="@+id/newly_added_1"
+                            android:layout_alignParentRight="true"
+                            tools:ignore="RtlHardcoded" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lin_layout"
+                            android:orientation="vertical"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginEnd="12dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:id="@+id/cat_name"
+                                android:textColor="@color/text"
+                                android:text="New Arrivals"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:text="13 Designs"
+                                android:textSize="12sp"
+                                android:id="@+id/cat_no"
+                                tools:targetApi="jelly_bean" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cat_desc"
+                                android:text="ABC scrolling blah blah blah blah"
+                                android:layout_marginTop="10dp"
+                                />
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:id="@+id/lin_btn_1"
+                                android:visibility="visible"
+                                android:orientation="horizontal">
+                                <Button
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:text="Share Description"
+                                    android:layout_height="40dp"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    android:id="@+id/share_desc_btn"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginEnd="10dp"/>
+
+                                <Button
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:text="Copy Description"
+                                    android:layout_height="40dp"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    android:id="@+id/copy_desc_btn"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginEnd="10dp"/>
+
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:text="@string/select_share"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:visibility="visible"
+                                    android:layout_gravity="start"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/select_all_btn"
+                                    android:background="@color/colorPrimary"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:text="select all"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/white"
+                                        android:textAllCaps="true"
+                                        android:textSize="10sp"
+                                        android:layout_toLeftOf="@+id/share"
+                                        android:layout_marginLeft="15dp"
+                                        android:gravity="center"
+                                        android:layout_marginStart="5dp" />
+
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/share"
+                                        android:checked="false"
+                                        android:textColor="@color/white"
+                                        android:background="@drawable/sqaure_1"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_margin="8dp"/>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:id="@+id/lin_btn"
+                                android:visibility="visible"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:text="Share on FB"
+                                    android:layout_height="40dp"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    android:id="@+id/share_facebook_btn"
+                                    android:background="#3B5998"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginEnd="10dp"/>
+
+
+
+                                <Button
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:text="@string/select_download"
+                                    android:layout_height="40dp"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"
+                                    android:id="@+id/download_btn"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginEnd="10dp"/>
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:textColor="@color/white"
+                                    android:text="@string/select_share"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_height="40dp"
+                                    android:id="@+id/sahre_btn"
+                                    android:background="@color/green"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:text="share"
+                                        android:textColor="@color/white"
+                                        android:textAllCaps="true"
+                                        android:textSize="10sp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/text_share"
+                                        android:gravity="center_vertical" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:id="@+id/wp"
+                                        android:layout_marginLeft="10dp"
+                                        app:srcCompat="@drawable/whatsapp"
+                                        android:layout_toRightOf="@+id/text_share"/>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:focusable="false"
+                            android:layout_below="@+id/lin_layout"
+                            android:focusableInTouchMode="false"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="16dp"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:visibility="visible"
+            android:id="@+id/scroll_view_1">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/fragment_home"
+                android:background="@color/white"
+                xmlns:app="http://scphemas.android.com/apk/res-auto"
+                tools:context="com.fashio.apps.Fragments.Fragment_View"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:layout_height="150dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/img_slider"
+                    android:visibility="gone"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/home_slider"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true" />
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_alignParentBottom="true"/>
+
+
+                </RelativeLayout>
+
+
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/progress_bar"
+                    android:layout_marginTop="100dp"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r_view"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_below="@+id/home_slider"
+                    android:visibility="gone">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

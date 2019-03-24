@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--<item android:icon="@drawable/help"-->
+        <!--android:id="@+id/profile_"-->
+        <!--android:visible="true"-->
+        <!--app:showAsAction="always"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/update_to_premium"-->
+        <!--android:visible="true"-->
+        <!--android:title="Update to Premium"-->
+        <!--app:showAsAction="never"/>-->
+
+</menu>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "675924148650",
+    "firebase_url": "https://shopperserra.firebaseio.com",
+    "project_id": "shopperserra",
+    "storage_bucket": "shopperserra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675924148650:android:4fb143d2a994fd3e",
+        "android_client_info": {
+          "package_name": "com.shoppers_era"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675924148650-rt2f8f3dnpvh48tbvtmnqs5pbothpcvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc_k2FznuwLgAi6SZU5wzDlJ3jFvxeJsU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

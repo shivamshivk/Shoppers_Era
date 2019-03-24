@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/navigation_home"
+    android:icon="@drawable/ic_home_black_24dp"
+    android:title="Home"
+    app:showAsAction="always|withText" />
+
+<item
+    android:id="@+id/navigation_trending"
+    android:icon="@drawable/trending_up"
+    app:showAsAction="always|withText"
+    android:title="Trending"/>
+
+
+<item
+    android:id="@+id/navigation_loved"
+    android:icon="@drawable/heart"
+    android:title="Wishlist"
+    app:showAsAction="always|withText" />
+
+
+<item
+    android:id="@+id/navigation_query"
+    android:icon="@drawable/whatsapp"
+    android:title="Support"
+    app:showAsAction="always|withText" />
+
+</menu>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shoppers_era.Fragments.Fragment_View">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 87770-99159"
+        android:textSize="22sp"
+        android:id="@+id/whatsapp_"
+        android:textColor="@color/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whatsapp_support"
+        android:textSize="20sp"
+        android:id="@+id/whatsapp"
+        android:layout_below="@+id/whatsapp_"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/open"
+        android:layout_height="40dp"
+        android:id="@+id/open_btn"
+        android:layout_below="@id/whatsapp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+
+
+</RelativeLayout>

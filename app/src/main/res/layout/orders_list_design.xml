@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:background="@drawable/rectangle"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="lollipop">
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin"
+        android:orientation="horizontal"
+        tools:targetApi="lollipop"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:id="@+id/iv"
+                android:scaleType="centerCrop"
+                tools:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Product Id - 89"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="normal"
+                    android:id="@+id/t1"
+                    android:typeface="normal"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="6dp"
+                    tools:text="Invoice Total - Rs 87"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#415351"
+                    android:textSize="14sp"
+                    android:id="@+id/quantity"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Your Margin - Rs 17"
+                        android:textColor="#2933b7"
+                        android:textSize="12sp"
+                        android:id="@+id/t2"/>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    tools:text="Ordered ID - 8756"
+                    android:textColor="#455156"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/t4"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdfe1"
+        android:layout_below="@+id/lin"
+        android:id="@+id/view"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tracking_id"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:text="Delivers in 20days"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/view"/>
+
+
+</RelativeLayout>
+

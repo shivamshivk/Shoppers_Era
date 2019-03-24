@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+
+            <android.support.v7.widget.Toolbar android:id="@+id/searchtoolbar"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                app:titleTextColor="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:weightSum="1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:id="@+id/back_button"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        app:srcCompat="@drawable/arrow_left"/>
+
+                    <AutoCompleteTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:id="@+id/search_commerce"
+                        android:hint="Search Here"
+                        android:textSize="15sp"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:textColorHint="@color/text"
+                        android:background="@color/white"
+                        android:maxLines="1" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:visibility="invisible"
+                        android:id="@+id/search_ico"
+                        app:srcCompat="@drawable/search_b"/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/lin"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Select &amp; Download"
+                android:layout_height="40dp"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:id="@+id/download_btn"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:text="@string/select_share"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:id="@+id/sahre_btn"-->
+                <!--android:background="@drawable/shape_3"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_marginLeft="49dp"-->
+                    <!--android:layout_marginStart="49dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Share"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="11sp" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_marginLeft="34dp"-->
+                    <!--android:layout_marginStart="34dp"-->
+                    <!--android:layout_toEndOf="@+id/textView"-->
+                    <!--android:layout_toRightOf="@+id/textView"-->
+                    <!--app:srcCompat="@drawable/whatsapp" />-->
+
+            <!--</RelativeLayout>-->
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_bar"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/empty_layout"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/empty"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nothing To Show"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

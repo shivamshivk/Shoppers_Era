@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:id="@+id/pay_layout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/apply"
+                android:text="Apply Coupon"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:gravity="center"/>
+
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_0"
+                android:orientation="horizontal"
+                tools:targetApi="lollipop"
+                tools:ignore="UselessParent"
+                android:background="@drawable/rectangle"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Base Amount :"
+                            android:textSize="16sp"
+                            android:id="@+id/tot_text"
+                            android:textColor="@color/text"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tot_text"
+                            android:text="Rs 401"
+                            android:layout_marginLeft="63dp"
+                            android:layout_marginStart="63dp"
+                            android:id="@+id/total_price"
+                            android:textSize="16sp"
+                            android:textColor="@color/text"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shipping_charge_layout"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shipping Charges :"
+                            android:textSize="15sp"
+                            android:id="@+id/shipping_charge_text"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/shipping_charge"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_toRightOf="@+id/shipping_charge_text"
+                            android:text="Rs 50"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cod_charge_layout"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="visible"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COD Charges :"
+                            android:textSize="15sp"
+                            android:id="@+id/cod_charge_text"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cod_charge"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginStart="68dp"
+                            android:layout_toRightOf="@+id/cod_charge_text"
+                            android:text="Rs 30"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/total_amount_layout"
+                        android:layout_marginLeft="10dp"
+                        android:visibility="visible"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                            android:id="@+id/total_amount_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Amount to be Paid :"
+                            android:textColor="@color/text"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/total_amount"
+                            android:layout_marginLeft="33dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_toRightOf="@+id/total_amount_text"
+                            android:text="Rs 209"
+                            android:textColor="@color/text"
+                            android:textSize="15sp"/>
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        android:layout_below="@+id/total_amount"
+                        android:id="@+id/nar_text"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"
+                        android:text="Set your margin "/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:id="@+id/nar_text_1"
+                        android:text="COD charges  â“˜"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_"
+                android:orientation="horizontal"
+                tools:targetApi="lollipop"
+                android:elevation="5dp"
+                android:visibility="gone"
+                tools:ignore="UselessParent"
+                android:background="@drawable/dr"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Transfer"
+                        android:textColor="@color/text"
+                        android:id="@+id/bt"
+                        android:textSize="16sp"
+                        android:layout_margin="10dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/order_id"
+                        android:background="@color/devider"
+                        android:id="@+id/devider"
+                        android:layout_marginRight="0.5dp"
+                        android:layout_marginLeft="0.5dp"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shipping_layout"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bank Name - Bank of India"
+                        android:layout_below="@+id/ban_t"
+                        android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:id="@+id/bnk_name"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bank Holder Name - Itrifid Pvt Ltd"
+                            android:layout_below="@+id/bnk_name"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="16sp"
+                            android:id="@+id/bnk_holder_name"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Account No - 459820110000509"
+                            android:layout_below="@+id/bnk_holder_name"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16sp"
+                            android:id="@+id/acc"
+                            android:layout_marginLeft="10dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IFSC - BKID0004598"
+                            android:layout_below="@+id/acc"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="16sp"
+                            android:id="@+id/ifsc"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/total_layout"
+                        android:visibility="gone"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:text="Payable Amount :"
+                            android:textSize="14sp"
+                            android:id="@+id/total_text"
+                            android:textColor="@color/text"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/total"
+                            android:layout_marginLeft="65dp"
+                            android:layout_toRightOf="@+id/total_text"
+                            tools:text="Rs. 209"
+                            android:textSize="14sp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_3"
+                android:orientation="horizontal"
+                tools:targetApi="lollipop"
+                android:elevation="5dp"
+                tools:ignore="UselessParent"
+                android:background="@drawable/dr"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="COD"
+                        android:textSize="16sp"
+                        android:id="@+id/cod"
+                        android:checked="true"
+                        android:layout_margin="10dp"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_1"
+                android:orientation="horizontal"
+                tools:targetApi="lollipop"
+                android:elevation="5dp"
+                tools:ignore="UselessParent"
+                android:background="@drawable/dr"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Online Payment"
+                        android:textSize="16sp"
+                        android:id="@+id/op"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:id="@+id/cnt"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:text="Continue"/>
+
+</RelativeLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/p_bar"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        android:id="@+id/status_layout"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <customfonts.TextView_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:textColor="#4d4d4d"
+                android:text="Congratulations !"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:src="@drawable/btn"/>
+
+
+            <customfonts.Regular_Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:text="You are rewarded"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:src="@drawable/btn"/>
+
+            <ImageView android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="42dp"
+                android:layout_marginBottom="62dp"
+                app:srcCompat="@drawable/ticket_percent"/>
+
+            <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/coupon_details"
+                android:visibility="visible"
+                android:layout_gravity="center">
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <customfonts.Regular_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/medium_text"
+                        android:text="Coupon ID"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:src="@drawable/btn"/>
+
+
+                    <customfonts.Regular_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        tools:text="AD105"
+                        android:id="@+id/order_id"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="16dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    >
+
+                    <customfonts.Regular_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/medium_text"
+                        android:text="Valid From"
+                        android:textSize="12dp"
+                        android:src="@drawable/btn"/>
+
+
+                    <customfonts.Regular_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        tools:text="Today 11:30 am"
+                        android:id="@+id/order_date"
+                        android:textSize="14dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="16dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    >
+
+                    <customfonts.Regular_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/medium_text"
+                        android:text="Valid Till"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:src="@drawable/btn"/>
+
+
+                    <customfonts.Regular_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"
+                        tools:text="Tommorow 9:30 am"
+                        android:textSize="14dp"
+                        android:id="@+id/payment_mode"
+                        android:gravity="center"
+                        android:layout_marginLeft="16dp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp"
+                    >
+
+                    <customfonts.Regular_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/medium_text"
+                        android:text="Coupon Amount"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:src="@drawable/btn"/>
+
+
+                    <customfonts.Regular_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorPrimary"
+                        tools:text="$ 3.50"
+                        android:id="@+id/payable_amount"
+                        android:textSize="14dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="16dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <customfonts.Regular_Textview
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:text="DONE"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:src="@drawable/btn"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

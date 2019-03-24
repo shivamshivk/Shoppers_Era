@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Newly Added"
+                android:background="#f33"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:id="@+id/newly_added"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Newly Added"
+                android:background="#f33"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:layout_below="@+id/newly_added"
+                android:id="@+id/newly_added_1"
+                android:layout_alignParentRight="true"
+                tools:ignore="RtlHardcoded" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lin_layout"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:id="@+id/cat_name"
+                    android:textColor="@color/text"
+                    android:text="New Arrivals"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="13 Designs"
+                    android:textSize="12sp"
+                    android:id="@+id/cat_no"
+                    tools:targetApi="jelly_bean" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cat_desc"
+                    android:text="ABC scrolling blah blah blah blah"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/lin_btn"
+                    android:tag="sticky"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="@string/select_share"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_gravity="start"
+                        android:layout_height="40dp"
+                        android:id="@+id/select_all_btn"
+                        android:background="@drawable/shape_3"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="select all"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:layout_toLeftOf="@+id/share"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:layout_marginStart="5dp" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/share"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="8dp"/>
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="@string/select_download"
+                        android:layout_height="40dp"
+                        android:textSize="10sp"
+                        android:id="@+id/download_btn"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="@string/select_share"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_gravity="start"
+                        android:layout_height="40dp"
+                        android:id="@+id/sahre_btn"
+                        android:background="@color/green"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="share"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:textSize="10sp"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:id="@+id/wp"
+                            app:srcCompat="@drawable/whatsapp"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="8dp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="16dp"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+    </RelativeLayout>

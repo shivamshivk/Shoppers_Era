@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shoppers_era.Fragments.Fragment_View">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_bar"
+        android:visibility="visible"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_layout"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_marginBottom="56dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ads:adSize="BANNER"
+            android:layout_marginTop="2dp"
+            android:visibility="visible"
+            ads:adUnitId="ca-app-pub-8846572999899891/7688429399"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:src="@drawable/empty"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/img"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ads:adSize="BANNER"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="1dp"
+            android:visibility="visible"
+            ads:adUnitId="ca-app-pub-8846572999899891/7688429399"/>
+
+    </LinearLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_win"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:id="@+id/view_ads"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/open"
+        android:visibility="gone"
+        android:layout_height="40dp"
+        android:id="@+id/open_btn"
+        android:layout_below="@id/view_ads"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+
+
+
+    </RelativeLayout>

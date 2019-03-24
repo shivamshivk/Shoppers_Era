@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/activity_main__handler_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/container"
+                    android:layout_below="@+id/view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:context="mr_auspicious.shivam_kr_shiv.com.commerce.Activities.MainActivity">
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:id="@+id/scroll_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFF">
+
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/relative_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ProgressBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/p_bar"/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/lin"
+                                android:visibility="invisible">
+
+
+                                <ImageView
+                                    android:id="@+id/img_without_img"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:layout_marginTop="30dp"
+                                    android:visibility="visible"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/acc_settings"
+                                    android:layout_centerHorizontal="true"/>
+
+                                <TextView
+                                    android:id="@+id/_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:layout_below="@+id/img_without_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="Diwakar Kr."
+                                    android:textColor="@color/text"
+                                    android:textSize="24sp" />
+
+                                <TextView
+                                    android:id="@+id/phone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="+91 1234567890"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="20sp"
+                                    tools:targetApi="jelly_bean" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/devider"
+                                    android:layout_marginTop="20dp"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/about"
+                                    >
+
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/crop_square"/>
+
+                                    <TextView
+                                        android:id="@+id/us"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="About Us"
+                                        android:gravity="center_vertical"
+                                        android:padding="16dp"
+                                        android:textColor="@color/text"
+                                        android:textSize="15sp"
+                                        />
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/devider"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/bank_details"
+                                    >
+
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/crop_square"/>
+
+                                    <TextView
+                                        android:id="@+id/bank_"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="My Payment Details"
+                                        android:gravity="center_vertical"
+                                        android:padding="16dp"
+                                        android:textColor="@color/text"
+                                        android:textSize="15sp"
+                                        />
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/devider"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/my_orders"
+                                    >
+
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/crop_square"/>
+
+                                    <TextView
+                                        android:id="@+id/orders"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="My Orders"
+                                        android:gravity="center_vertical"
+                                        android:padding="16dp"
+                                        android:textColor="@color/text"
+                                        android:textSize="15sp"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/devider"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/help"
+                                    >
+
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/crop_square"/>
+
+                                    <TextView
+                                        android:id="@+id/us_help"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Help"
+                                        android:gravity="center_vertical"
+                                        android:padding="16dp"
+                                        android:textColor="@color/text"
+                                        android:textSize="15sp"
+                                        />
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/devider"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/contact"
+                                    >
+
+
+                                    <ImageView
+                                        android:layout_width="18dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/crop_square"/>
+
+                                    <TextView
+                                        android:id="@+id/cart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Contact Us"
+                                        android:gravity="center_vertical"
+                                        android:padding="16dp"
+                                        android:textColor="@color/text"
+                                        android:textSize="15sp"
+                                        />
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:background="@color/devider"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="gone"
+                                    >
+
+                                    <Button
+                                        android:layout_width="130dp"
+                                        android:layout_height="40dp"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="18sp"
+                                        android:id="@+id/reward_btn"
+                                        android:textAllCaps="false"
+                                        android:background="@drawable/rectangle_1"
+                                        android:textColor="@color/colorPrimary"
+                                        android:text="Contact Us"
+                                        android:visibility="visible"
+                                        android:layout_marginLeft="40dp"
+                                        android:layout_marginRight="40dp"
+                                        android:layout_marginTop="20dp"
+                                        />
+
+                                    <Button
+                                        android:layout_width="130dp"
+                                        android:layout_height="40dp"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textSize="18sp"
+                                        android:id="@+id/help_btn"
+                                        android:textAllCaps="false"
+                                        android:layout_marginLeft="40dp"
+                                        android:layout_marginRight="40dp"
+                                        android:layout_marginTop="20dp"
+                                        android:background="@color/colorPrimary"
+                                        android:textColor="@color/white"
+                                        android:text="Help"
+                                        />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                    </android.support.v4.widget.NestedScrollView>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimary"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/splash"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
